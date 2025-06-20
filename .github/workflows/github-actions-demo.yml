@@ -3,7 +3,6 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
   job1:
-    runs-on:ubuntu-latest
     steps:
     - run: pwd
     - run: ls
