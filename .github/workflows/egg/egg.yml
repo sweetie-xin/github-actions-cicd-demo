@@ -1,16 +1,17 @@
 on: push
 
 jobs:
-  job1:
+  npm-buld:
+    name: npm-build 工作
     runs-on: ubuntu-latest
     steps: 
-    - run: pwd
-    - run: ls
-  job2:
-    runs-on: ubuntu-latest
-    steps: 
-    - run: node --version
+    - name: 读取仓库内容
+      uses: actions/checkout@v4
+    - name: 安装依赖
+      run: npm install
+    - name: 项目打包
+      run: npm run build
     
-  
+    
     
     
