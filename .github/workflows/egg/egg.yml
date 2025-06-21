@@ -1,4 +1,7 @@
+name: 打包deepseekmine 项目
 on: push
+permissions:
+  contents: write
 
 jobs:
   npm-buld:
